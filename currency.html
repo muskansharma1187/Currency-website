@@ -1,0 +1,121 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrencyX | Currency Converter</title>
+    <link rel="stylesheet" href="currencystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Currency<span>X.</span></div>
+        <div class="nav-tag">SMART CURRENCY CONVERTER</div>
+    </nav>
+
+    <main class="main-container">
+
+        <section class="hero">
+            <div class="small-label">CURRENCY EXCHANGE MADE SIMPLE</div>
+            <h1>Convert Money.<br><span>Explore The World.</span></h1>
+            <p>Fast, simple and reliable currency conversion with the latest available exchange rates.</p>
+        </section>
+
+        <section class="converter-card">
+
+            <div class="card-heading">
+                <div>
+                    <h2>Currency Converter</h2>
+                    <p>Check exchange rates instantly</p>
+                </div>
+                <div class="exchange-icon">↗</div>
+            </div>
+
+            <div class="input-group">
+                <label for="amount">AMOUNT</label>
+                <input type="number" id="amount" value="1" min="0.01" step="any" placeholder="Enter amount">
+            </div>
+
+            <div class="currency-section">
+
+                <div class="currency-box">
+                    <label for="fromCurrency">FROM</label>
+                    <select id="fromCurrency">
+                        <option value="INR" selected>INR - Indian Rupee</option>
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="AUD">AUD - Australian Dollar</option>
+                        <option value="CAD">CAD - Canadian Dollar</option>
+                        <option value="CHF">CHF - Swiss Franc</option>
+                        <option value="CNY">CNY - Chinese Yuan</option>
+                        <option value="AED">AED - UAE Dirham</option>
+                        <option value="SGD">SGD - Singapore Dollar</option>
+                        <option value="NZD">NZD - New Zealand Dollar</option>
+                        <option value="SAR">SAR - Saudi Riyal</option>
+                        <option value="KRW">KRW - South Korean Won</option>
+                        <option value="BRL">BRL - Brazilian Real</option>
+                    </select>
+                </div>
+
+                <button class="swap-btn" id="swapBtn" title="Swap currencies">⇄</button>
+
+                <div class="currency-box">
+                    <label for="toCurrency">TO</label>
+                    <select id="toCurrency">
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="USD" selected>USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="AUD">AUD - Australian Dollar</option>
+                        <option value="CAD">CAD - Canadian Dollar</option>
+                        <option value="CHF">CHF - Swiss Franc</option>
+                        <option value="CNY">CNY - Chinese Yuan</option>
+                        <option value="AED">AED - UAE Dirham</option>
+                        <option value="SGD">SGD - Singapore Dollar</option>
+                        <option value="NZD">NZD - New Zealand Dollar</option>
+                        <option value="SAR">SAR - Saudi Riyal</option>
+                        <option value="KRW">KRW - South Korean Won</option>
+                        <option value="BRL">BRL - Brazilian Real</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button class="convert-btn" id="convertBtn">
+                Convert Currency <span>→</span>
+            </button>
+
+            <div class="result-box" id="resultBox" aria-live="polite">
+                <p class="result-label">CONVERTED AMOUNT</p>
+                <h2 id="result">--</h2>
+                <p id="exchangeRate">Enter an amount and convert</p>
+            </div>
+
+            <p class="status" id="status"></p>
+
+            <div class="card-footer">
+                <span>🌐 Multiple currencies</span>
+                <span>🔒 No registration required</span>
+            </div>
+
+        </section>
+
+        <div class="note">
+            Exchange rates are reference rates and may differ from bank or payment provider rates.
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CurrencyX. Built with HTML, CSS & JavaScript.</p>
+    </footer>
+
+    <script src="currencyscript.js"></script>
+</body>
+</html>
